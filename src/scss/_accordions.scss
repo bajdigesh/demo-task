@@ -1,0 +1,121 @@
+.accordion {
+	.card-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: $white;
+		border-bottom: 0;
+		.checkup-by-doctor {
+			display: flex;
+			align-items: center;
+		}
+		.image-wrapper {
+			width: 50px;
+			height: 50px;
+			overflow: hidden;
+			margin-right: 0.75rem;
+			& + span {
+				color: $black;
+				font-weight: bold;
+			}
+		}
+	}
+	.nav-tabs {
+		flex-wrap: nowrap;
+		padding: 0 1rem;
+		overflow-x: auto;
+		overflow-y: hidden;
+		position: relative;
+		&:after {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			content: "";
+			background: darken($white, 11%);
+		}
+	}
+	.nav-link {
+		padding: 0 0.75rem 0.75rem;
+		border-radius: 0;
+		border: 0;
+		white-space: nowrap;
+		text-transform: uppercase;
+		color: rgba($black, 0.55);
+		font-weight: bold;
+		@include pxtorem(16);
+		position: relative;
+		transition: all 0.25s ease;
+		&:after {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 3px;
+			content: "";
+			background: transparent;
+			z-index: 1;
+			transition: all 0.25s ease;
+		}
+		&:hover,
+		&.active {
+			color: lighten($orange, 0.3%);
+			&:after {
+				background: lighten($orange, 0.3%);
+			}
+		}
+	}
+	.tab-content {
+		padding: 1.75rem;
+	}
+	.tab-pane {
+		.btn {
+			min-width: 120px;
+		}
+		h5 {
+			font-weight: bold;
+		}
+		li {
+			list-style: none;
+			color: $black;
+			margin-bottom: 0.25rem;
+			&:before {
+				content: "-";
+				display: inline-block;
+				margin-right: 0.25rem;
+			}
+		}
+		a {
+			&.has-attachment {
+				width: 49%;
+				display: inline-block;
+				vertical-align: middle;
+				transition: all 0.25s ease;
+				i {
+					padding: 0.7rem;
+					background: rgba(lighten($black, 44%), 0.15);
+					border-radius: 0.25rem;
+					color: $blueDark;
+				}
+				p {
+					display: inline-block;
+					vertical-align: middle;
+					font-weight: bold;
+					label {
+						display: block;
+						color: $black;
+						margin: 0;
+						cursor: pointer;
+					}
+					span {
+						color: rgba($black, 0.35);
+					}
+				}
+				&:hover {
+					opacity: 0.8;
+				}
+			}
+		}
+	}
+}

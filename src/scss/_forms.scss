@@ -1,0 +1,38 @@
+.search-form {
+	position: relative;
+	margin-left: 1rem;
+	i {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 1rem;
+		color: #c7c7c7;
+	}
+	input {
+		height: auto;
+		padding-left: 2.25rem;
+	}
+	.content & {
+		border-left: 2px solid #c7c7c7;
+	}
+}
+.section-header {
+	.search-form {
+		padding-left: 1rem;
+		input {
+			padding: 0 0 0 1.5rem;
+		}
+	}
+}
+.pt-medical-history {
+	.section-header {
+		h4 {
+			color: $blue;
+		}
+	}
+	.search-form {
+		input {
+			background: transparent;
+		}
+	}
+}

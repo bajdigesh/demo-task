@@ -1,0 +1,91 @@
+%hideCaret {
+	&:after {
+		display: none;
+	}
+}
+.table {
+	table-layout: fixed;
+	td,
+	th {
+		padding: 0.5rem 0.25rem;
+		vertical-align: middle;
+		border: 0;
+	}
+	.has-detail {
+		color: inherit;
+		&:hover {
+			span {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+.table-appointment-list {
+	thead {
+		th {
+			background: $blue;
+			color: $white;
+			padding: 0.5rem 0.25rem;
+		}
+	}
+	tbody {
+		tr {
+			&:nth-of-type(odd) {
+				td {
+					background: darken($white, 3%);
+				}
+			}
+			td {
+				padding: 0.5rem 0.25rem;
+			}
+		}
+	}
+	figure {
+		width: 30px;
+		height: 30px;
+		border: 2px solid $borderBlue;
+		margin-right: 0.25rem;
+		position: relative;
+		img {
+			border-radius: 50%;
+		}
+		& + span {
+			display: block;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+		.indicator {
+			bottom: 0;
+			right: 0;
+			border: 1px solid $white;
+			&-pending {
+				background: $green;
+			}
+			&-finished {
+				background: darken($white, 11%);
+			}
+		}
+	}
+	.dropdown-menu {
+		margin-left: -65px !important;
+	}
+}
+.records-summary {
+	border-top: 1px solid darken($white, 5%);
+}
+.action-col {
+	.dropdown-toggle {
+		@extend %hideCaret;
+		text-align: right;
+		margin-right: 1rem;
+	}
+}
+
+.pt-records {
+	.table {
+		th, td {
+			padding: 0.2rem;
+		}
+	}
+}

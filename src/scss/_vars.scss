@@ -1,0 +1,17 @@
+// Color Settings
+$black     : #000000;
+$white     : #FFFFFF;
+$blue      : #0077BD;
+// $borderBlue: #0075C0;
+$borderBlue: darken($blue, 0.77%);
+$orange    : #FA9B00;
+$blueDark  : #2173A3;
+$green     : #00B11B;
+$red       : #FF0000;
+$gray      : #807E7E;
+
+// Font Settings
+$headerFonts : 'Montserrat', sans-serif;
+$contentFonts: 'Nunito', sans-serif;
+$fontSize    : 16;
+$fontVariants: 10, 12, 13, 14, 16, 18, 20, 22, 24, 25, 26, 28, 30;

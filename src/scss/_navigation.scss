@@ -1,0 +1,63 @@
+header {
+	background: $white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+}
+.navbar {
+	&-brand {
+		width: 175px;
+		transition: all 0.25s ease;
+	}
+	.d-flex {
+		justify-content: space-between;
+		& + .d-flex {
+			margin-top: 0.75rem;
+			transition: all 0.25s ease;
+		}
+	}
+}
+.sidebar-toggle {
+	color: $gray;
+}
+
+//SIDEBAR STYLES
+.nav-sidebar {
+	width: 250px;
+	height: 100vh;
+	position: fixed;
+	left: -100%;
+	top: 0;
+	z-index: 10;
+	background: $blue;
+	padding-top: 125px;
+	transition: all 0.25s ease;
+	&.open{
+		left: 0;
+	}
+	ul {
+		max-height: 100%;
+		overflow: auto;
+		li {
+			a {
+				color: $white;
+				padding: 0.75rem 1rem;
+				display: block;
+				transition: all 0.25s ease;
+				i {
+					min-width: 20px;
+					margin-right: 0.25rem;
+				}
+				&:hover {
+					background: rgba($white, 0.1);
+				}
+				&.active {
+					background: darken($white, 2%);
+					color: $blue;
+				}
+			}
+		}
+	}
+}

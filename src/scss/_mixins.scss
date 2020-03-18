@@ -1,0 +1,3 @@
+@mixin pxtorem($size) {
+	font-size: ($size/$fontSize)+rem;
+}

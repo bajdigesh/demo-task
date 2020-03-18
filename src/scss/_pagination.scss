@@ -1,0 +1,12 @@
+.page-link {
+	padding: 1px 5px 2px;
+	border: 1px solid transparent;
+	color: $black;
+	margin: 0;
+	&.fs-10 {
+		padding-top: 5px;
+	}
+	&.active {
+		border: 1px solid $black;
+	}
+}

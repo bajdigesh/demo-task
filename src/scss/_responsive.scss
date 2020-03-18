@@ -1,0 +1,228 @@
+@media screen and (min-width: 641px) {
+	.app-wrapper {
+		padding: 5.625rem 1rem 1rem;
+	}
+	.navbar {
+		.d-flex {
+			justify-content: inherit;
+			& + .d-flex {
+				margin-top: 0
+			}
+		}
+	}
+	.post-dropdown {
+		width: 120px;
+		.dropdown-toggle {
+			height: 38px;
+			line-height: 26px;
+		}
+	}
+	.notification-dropdown {
+		.dropdown-menu {
+			width: 500px;
+		}
+	}
+	.user {
+		$this: &;
+		&-dropdown {
+			width: 180px;
+			#{$this}-image {
+				width: 40px;
+				height: 40px;
+			}
+		}
+	}
+	.nav-sidebar {
+		padding-top: 80px;
+	}
+	.table-appointment-list {
+		figure {
+			width: 40px;
+			height: 40px;
+			display: inline-block;
+			vertical-align: middle;
+			& + span {
+				display: inline-block;
+				overflow: inherit;
+				vertical-align: middle;
+			}
+		}
+	}
+	.booked-appointemnts {
+		order: 1;
+	}
+	.calendar-wrapper {
+		order: 0;
+	}
+	.navbar {
+		.d-flex {
+			& > div:not(:first-of-type) {
+				margin-left: 1rem;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.app-wrapper {
+		&.expanded {
+			padding: 5.625rem 1rem 1rem 275px;
+			.nav-sidebar {
+				width: 250px;
+			}
+		}
+		&:not(.expanded) {
+			padding: 5.625rem 1rem 1rem 75px;
+			.nav-sidebar {
+				width: 50px;
+				left: 0;
+				li {
+					a {
+						span {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+	.navbar-brand {
+		width: 220px;
+	}
+	header {
+		.search-form {
+			margin-left: 1rem;
+			max-width: 280px;
+			padding-left: 0;
+			input {
+				padding-left: 2.25rem;
+				height: 45px;
+			}
+		}
+	}
+	.post-dropdown {
+		width: 170px;
+		.dropdown-toggle {
+			height: 45px;
+			line-height: 33px;
+		}
+	}
+	.user {
+		$this: &;
+		&-dropdown {
+			width: 210px;
+			#{$this}-image {
+				width: 50px;
+				height: 50px;
+			}
+		}
+	}
+	.navbar {
+		.d-flex {
+			& > div:not(:first-of-type) {
+				margin-left: 1.25rem;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.navbar {
+		.d-flex {
+			position: relative;
+		} 
+	}
+	.sidebar-toggle {
+		transform: translateX(-60px);
+	}
+	header {
+		.search-form {
+			position: absolute;
+			right: 0;
+			padding-left: 0;
+			margin-top: 0;
+			input {
+				width: 42px !important;
+				height: 40px !important;
+				transition: all 0.25s ease;
+				&:focus {
+					width: 200px !important;
+					padding-left: 2.25rem;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.navbar {
+		display: block;
+	}
+	.notification-dropdown {
+		.dropdown-menu {
+			width: 300px;
+			left: 0;
+		}
+		.d-flex {
+			justify-content: initial;
+		}
+	}
+	.content-dashboard {
+		.section-header {
+			flex-direction: column;
+		}
+	}
+	.hidden-in-sm {
+		display: none;
+	}
+	.action-col {
+		width: 50px;
+	}
+	.section-header {
+		align-items: inherit !important;
+	}
+	.search-form {
+		margin: 1rem 0 0;
+	}
+	.patient-basic-info {
+		display: block !important;
+		.pt-image {
+			margin: 0 auto 1rem !important;
+		}
+		.pt-records {
+			padding-left: 0 !important;
+		}
+	}
+	.accordion {
+		.card-header {
+			flex-direction: column;
+			align-items: normal;
+			justify-content: start;
+			position: relative;
+			.checkup-by-doctor {
+				order: 1;
+				align-items: normal;
+			}
+			.checkup-type {
+				order: 3;
+				padding-left: 62px;
+			}
+			.doctor-type {
+				order: 2;
+				padding-left: 62px;
+				margin: -1.75rem 0 0.5rem;
+			}
+			.checkup-date {
+				order: 4;
+				padding-left: 62px;
+				margin-top: 5px;
+			}
+			button {
+				position: absolute;
+				right: 1rem;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+	}
+}
