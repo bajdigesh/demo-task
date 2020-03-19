@@ -19,6 +19,18 @@
 				font-weight: bold;
 			}
 		}
+		.btn {
+			color: rgba($black, 0.5);
+			@include pxtorem(14);
+			i {
+				transition: all 0.2s ease;
+			}
+			&[aria-expanded='true'] {
+				i {
+					transform: rotate(180deg);
+				}
+			}
+		}
 	}
 	.nav-tabs {
 		flex-wrap: nowrap;

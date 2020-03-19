@@ -361,12 +361,12 @@ include('./shared/sidebar.php');
 					</div>
 					<span class="doctor-type">Dentist</span>
 					<span class="checkup-date"><i class="fa fa-calendar-alt"></i> 09/01/2020</span>
-					<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#history-detail-2" aria-expanded="true" aria-controls="history-detail-2">
+					<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#history-detail-2" aria-expanded="false" aria-controls="history-detail-2">
 						<i class="fa fa-chevron-down"></i>
 					</button>
 				</div>
 
-				<div id="history-detail-2" class="collapse show" aria-labelledby="history-2" data-parent="#medical-history-lists">
+				<div id="history-detail-2" class="collapse" aria-labelledby="history-2" data-parent="#medical-history-lists">
 					<div class="card-body px-0">
 						<!-- Tab Bars -->
 						<ul class="nav nav-tabs" id="medical-history-types" role="tablist">
@@ -590,12 +590,12 @@ include('./shared/sidebar.php');
 					</div>
 					<span class="doctor-type">Dermatologist</span>
 					<span class="checkup-date"><i class="fa fa-calendar-alt"></i> 10/01/2020</span>
-					<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#history-detail-3" aria-expanded="true" aria-controls="history-detail-3">
+					<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#history-detail-3" aria-expanded="false" aria-controls="history-detail-3">
 						<i class="fa fa-chevron-down"></i>
 					</button>
 				</div>
 
-				<div id="history-detail-3" class="collapse show" aria-labelledby="history-3" data-parent="#medical-history-lists">
+				<div id="history-detail-3" class="collapse" aria-labelledby="history-3" data-parent="#medical-history-lists">
 					<div class="card-body px-0">
 						<!-- Tab Bars -->
 						<ul class="nav nav-tabs" id="medical-history-types" role="tablist">

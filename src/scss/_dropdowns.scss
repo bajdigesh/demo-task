@@ -20,6 +20,13 @@
 		&:focus {
 			color: darken($gray, 5%);
 		}
+		&:after {
+			border-top-width: 0.4em;
+			position: absolute;
+			right: 0.5rem;
+			top: 50%;
+			transform: translateY(-50%);
+		}
 	}
 	&-menu {
 		margin: 0;
@@ -59,6 +66,13 @@
 				clear: both;
 				display: block;
 				font-weight: bold;
+			}
+		}
+		.dropdown-toggle {
+			&:after {
+				transform: inherit;
+				top: auto;
+				bottom: 0.8rem;
 			}
 		}
 	}

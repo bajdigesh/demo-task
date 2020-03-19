@@ -130,10 +130,10 @@
 	.navbar {
 		.d-flex {
 			position: relative;
-		} 
+		}
 	}
 	.sidebar-toggle {
-		transform: translateX(-60px);
+		transform: translateX(-75px);
 	}
 	header {
 		.search-form {
@@ -157,6 +157,19 @@
 @media screen and (max-width: 640px) {
 	.navbar {
 		display: block;
+		.post-dropdown {
+			.dropdown-toggle {
+				padding: 0.30rem 1.5rem 0.35rem 1rem !important;
+			}
+		}
+	}
+	.user-dropdown {
+		.dropdown-toggle {
+			&:after {
+				right: -0.75rem;
+				bottom: 0.4rem;
+			}
+		}
 	}
 	.notification-dropdown {
 		.dropdown-menu {
@@ -183,6 +196,9 @@
 	}
 	.search-form {
 		margin: 1rem 0 0;
+		i {
+			pointer-events: none;
+		}
 	}
 	.patient-basic-info {
 		display: block !important;
